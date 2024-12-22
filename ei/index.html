@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode the Colors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div style="display: flex; align-items: center;">
+                <div class="level-badge">L1</div>
+                <h1>Decode the colors</h1>
+            </div>
+            <div>
+                <span id="moves-left">5 Moves left</span>
+                <button class="exit-btn" onclick="exitGame()">Exit</button>
+            </div>
+        </div>
+
+        <div class="game-grid">
+            <div>
+                <div id="circles" class="circles-container"></div>
+                <div id="palette" class="color-palette"></div>
+                <button id="submit" class="submit-btn">Submit</button>
+            </div>
+            <div class="move-history">
+                <h2>Move History</h2>
+                <div id="moves"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <div class="modal-buttons">
+                <button id="modal-primary" class="modal-btn primary"></button>
+                <button id="modal-secondary" class="modal-btn secondary" style="display: none;"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./func.js"></script>
+</body>
+</html>
